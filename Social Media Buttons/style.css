@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #9b59b6;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sm-container{
+    text-align: center;
+}
+
+.sm-container i{
+    color: #ecf0f1;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sm-container i:hover{
+    transform: scale(1.2);
+}
+
+.sm-menu{
+    background: #3498db;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+}
+
+.sm-menu::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:-5px;
+    left: 50%;
+    background: #3498db;
+    transform: translateX(-50%) rotate(45deg);
+}
