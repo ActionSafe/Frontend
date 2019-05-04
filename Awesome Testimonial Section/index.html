@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome Testimonial Section</title>
+    <!--移动端viewport校正-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="../static/js/jquery-2.2.4.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
 </head>
 <body>
-
+    <div class="testimonial-section">
+        <div class="inner-width">
+            <h1>What clients say about us?</h1>
+            <div class="border"></div>
+            <div class="slides owl-carousel">
+                <div class="testimonial">
+                    <div class="info">
+                        <img src="img/c1.jpg" alt="" class="client-face">
+                        <div class="client-name"><span>Client1</span></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam asperiores dignissimos eum excepturi facilis illo impedit mollitia necessitatibus, numquam odit praesentium provident sapiente similique temporibus ullam ut vitae.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="info">
+                        <img src="img/c2.jpg" alt="" class="client-face">
+                        <div class="client-name"><span>Client2</span></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam asperiores dignissimos eum excepturi facilis illo impedit mollitia necessitatibus, numquam odit praesentium provident sapiente similique temporibus ullam ut vitae.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="info">
+                        <img src="img/c3.jpg" alt="" class="client-face">
+                        <div class="client-name"><span>Client3</span></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam asperiores dignissimos eum excepturi facilis illo impedit mollitia necessitatibus, numquam odit praesentium provident sapiente similique temporibus ullam ut vitae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{items:1},
+                700:{items:2},
+                1200:{items:3}
+            }
+        });
+    </script>
 </body>
 </html>
